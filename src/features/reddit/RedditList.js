@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 
 import { useSelector, useDispatch } from 'react-redux'
 
-import { DetailItem } from '../../commons'
+import { DetailItem } from '../../components'
 
-import { fetchRedditIfNeeded } from './actions'
+import { fetchRedditIfNeeded } from './redux/actions'
 
 const RedditList = () => {
   const name = 'all'
@@ -14,9 +14,7 @@ const RedditList = () => {
 
   useEffect(() => {
     dispatch(fetchRedditIfNeeded(name))
-    return () => {
-      console.log('Unmount')
-    }
+    return () => {}
   }, [dispatch, name])
 
   return (
