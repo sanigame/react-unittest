@@ -15,7 +15,7 @@ DetailItem.propTypes = {
 }
 
 DetailItem.defaultProps = {
-  title: '',
+  title: 'default',
 }
 
 export default DetailItem

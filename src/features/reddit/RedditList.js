@@ -18,7 +18,7 @@ const RedditList = () => {
   }, [dispatch, name])
 
   return (
-    <div>
+    <div className="reddit">
       {isFetching ? <p>loading</p> : null}
       {value.map((topic, i) => (
         <DetailItem key={i} title={topic.data.title} />
