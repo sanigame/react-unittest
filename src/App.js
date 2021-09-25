@@ -5,7 +5,7 @@ import './styles/app.css'
 
 function App() {
   return (
-    <div id="app">
+    <div className="app">
       <h1>Title</h1>
       <Routes />
     </div>
