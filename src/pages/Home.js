@@ -4,7 +4,7 @@ import { RedditList } from '../features/reddit'
 
 const Home = () => {
   return (
-    <div id="homepage">
+    <div className="homepage">
       <RedditList />
     </div>
   )
