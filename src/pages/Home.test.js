@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 import { Provider } from 'react-redux'
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
@@ -17,7 +17,7 @@ describe('<Home />', () => {
     expect(wrapper.find('.homepage').length).toBe(1)
   })
 
-  it('should render <RedditList />', () => {
+  it('should render <RedditList /> component', () => {
     const store = mockStore({
       reddit: {
         isFetching: false,
@@ -25,9 +25,9 @@ describe('<Home />', () => {
         error: null,
       },
     })
-    const wrapper = shallow(
+    const wrapper = mount(
       <Provider store={store}>
-        <RedditList />
+        <Home />
       </Provider>,
     )
     expect(wrapper.find(RedditList).length).toBe(1)

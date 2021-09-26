@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --no-cache ",
     "test:report": "open coverage/lcov-report/index.html",
     "eject": "react-scripts eject",
     "lint": "eslint",
