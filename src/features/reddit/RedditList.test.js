@@ -102,7 +102,7 @@ describe('<RedditList />', () => {
     expect(wrapper.contains(<p>loading</p>)).toBe(true)
   })
 
-  it('should render error', () => {
+  it('should render error message', () => {
     const store = mockStore({
       reddit: {
         isFetching: false,

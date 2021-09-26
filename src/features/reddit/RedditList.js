@@ -14,7 +14,6 @@ const RedditList = () => {
 
   useEffect(() => {
     dispatch(fetchRedditIfNeeded(name))
-    return () => {}
   }, [dispatch, name])
 
   return (
